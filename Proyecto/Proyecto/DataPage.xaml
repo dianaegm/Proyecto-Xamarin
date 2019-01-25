@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Proyecto.DataPage"  Title="{Binding Name, StringFormat='Detalles de: {0}'}">
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical" Margin="25">
+            <StackLayout Orientation="Horizontal">
+               <Label Text="Name"/>
+               <Label Text="{Binding Name}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+               <Label Text="User"/>
+               <Label Text="{Binding Username}"/>
+            </StackLayout>
+            
+                <StackLayout Orientation="Horizontal">
+               <Label Text="Email"/>
+               <Label Text="{Binding Email}"/>
+            </StackLayout>
+          
+            
+            <Button Text="Company" x:Name="ButonEmpresa" Clicked="Handle_Clicked"/> 
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

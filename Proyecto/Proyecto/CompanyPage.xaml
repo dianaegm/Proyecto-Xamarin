@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Proyecto.CompanyPage">
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical" Margin="25">
+            <StackLayout Orientation="Horizontal">
+               <Label Text="Company: "/>
+               <Label Text="{Binding Name}"/>
+            </StackLayout>
+            
+             <StackLayout Orientation="Horizontal">
+               <Label Text="CatchPhrase: "/>
+               <Label Text="{Binding CatchPhrase}"/>
+            </StackLayout>
+            
+              <StackLayout Orientation="Horizontal">
+               <Label Text="Bs: "/>
+               <Label Text="{Binding Bs}"/>
+            </StackLayout>
+            
+            <Button Text="Address" x:Name="ButonAddress" Clicked="Handle_Clicked"/> 
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

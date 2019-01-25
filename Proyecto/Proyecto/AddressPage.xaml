@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Proyecto.AddressPage">
+    <ContentPage.Content>
+        
+         <StackLayout Orientation="Vertical" Margin="25">
+            
+            <StackLayout Orientation="Horizontal">
+               <Label Text="Street: "/>
+               <Label Text="{Binding Street}"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+               <Label Text="Suite: "/>
+               <Label Text="{Binding Suite}"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+               <Label Text="City: "/>
+               <Label Text="{Binding City}"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+               <Label Text="Zipcode: "/>
+               <Label Text="{Binding Zipcode}"/>
+            </StackLayout>
+            
+            </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
